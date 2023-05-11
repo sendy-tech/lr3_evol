@@ -1,0 +1,12 @@
+C:\Users\1demb\source\repos\Tsp\bin\Debug\tsp.exe.config
+C:\Users\1demb\source\repos\Tsp\bin\Debug\tsp.XML
+C:\Users\1demb\source\repos\Tsp\bin\Debug\tsp.exe
+C:\Users\1demb\source\repos\Tsp\bin\Debug\tsp.pdb
+C:\Users\1demb\source\repos\Tsp\obj\Debug\Tsp.csproj.AssemblyReference.cache
+C:\Users\1demb\source\repos\Tsp\obj\Debug\Tsp.csproj.SuggestedBindingRedirects.cache
+C:\Users\1demb\source\repos\Tsp\obj\Debug\Tsp.Properties.Resources.resources
+C:\Users\1demb\source\repos\Tsp\obj\Debug\Tsp.TspForm.resources
+C:\Users\1demb\source\repos\Tsp\obj\Debug\Tsp.csproj.GenerateResource.cache
+C:\Users\1demb\source\repos\Tsp\obj\Debug\Tsp.csproj.CoreCompileInputs.cache
+C:\Users\1demb\source\repos\Tsp\obj\Debug\tsp.exe
+C:\Users\1demb\source\repos\Tsp\obj\Debug\tsp.pdb
