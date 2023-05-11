@@ -55,8 +55,6 @@ namespace Tsp
             this.maxGenerationTextBox = new System.Windows.Forms.TextBox();
             this.groupSizeLabel = new System.Windows.Forms.Label();
             this.groupSizeTextBox = new System.Windows.Forms.TextBox();
-            this.randomSeedTextBox = new System.Windows.Forms.TextBox();
-            this.randomSeedLabel = new System.Windows.Forms.Label();
             this.openCityListButton = new System.Windows.Forms.Button();
             this.clearCityListButton = new System.Windows.Forms.Button();
             this.mutationTextBox = new System.Windows.Forms.TextBox();
@@ -69,6 +67,7 @@ namespace Tsp
             this.CloseCityOddsLabel = new System.Windows.Forms.Label();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.selectFileButton = new System.Windows.Forms.Button();
+            this.randomSeedTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tourDiagram)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,7 +144,7 @@ namespace Tsp
             // StartButton
             // 
             this.StartButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.StartButton.Location = new System.Drawing.Point(444, 409);
+            this.StartButton.Location = new System.Drawing.Point(444, 369);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(87, 34);
             this.StartButton.TabIndex = 10;
@@ -157,7 +156,7 @@ namespace Tsp
             // 
             this.fileNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fileNameLabel.AutoSize = true;
-            this.fileNameLabel.Location = new System.Drawing.Point(432, 308);
+            this.fileNameLabel.Location = new System.Drawing.Point(431, 268);
             this.fileNameLabel.Name = "fileNameLabel";
             this.fileNameLabel.Size = new System.Drawing.Size(70, 13);
             this.fileNameLabel.TabIndex = 0;
@@ -167,7 +166,7 @@ namespace Tsp
             // fileNameTextBox
             // 
             this.fileNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.fileNameTextBox.Location = new System.Drawing.Point(428, 324);
+            this.fileNameTextBox.Location = new System.Drawing.Point(428, 284);
             this.fileNameTextBox.Name = "fileNameTextBox";
             this.fileNameTextBox.Size = new System.Drawing.Size(116, 21);
             this.fileNameTextBox.TabIndex = 6;
@@ -211,29 +210,10 @@ namespace Tsp
             this.groupSizeTextBox.TabIndex = 3;
             this.groupSizeTextBox.Text = "5";
             // 
-            // randomSeedTextBox
-            // 
-            this.randomSeedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.randomSeedTextBox.Location = new System.Drawing.Point(428, 284);
-            this.randomSeedTextBox.Name = "randomSeedTextBox";
-            this.randomSeedTextBox.Size = new System.Drawing.Size(116, 21);
-            this.randomSeedTextBox.TabIndex = 5;
-            this.randomSeedTextBox.Text = "0";
-            // 
-            // randomSeedLabel
-            // 
-            this.randomSeedLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.randomSeedLabel.AutoSize = true;
-            this.randomSeedLabel.Location = new System.Drawing.Point(428, 268);
-            this.randomSeedLabel.Name = "randomSeedLabel";
-            this.randomSeedLabel.Size = new System.Drawing.Size(103, 13);
-            this.randomSeedLabel.TabIndex = 0;
-            this.randomSeedLabel.Text = "Случайное семя";
-            // 
             // openCityListButton
             // 
             this.openCityListButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.openCityListButton.Location = new System.Drawing.Point(428, 351);
+            this.openCityListButton.Location = new System.Drawing.Point(428, 311);
             this.openCityListButton.Name = "openCityListButton";
             this.openCityListButton.Size = new System.Drawing.Size(113, 23);
             this.openCityListButton.TabIndex = 8;
@@ -244,7 +224,7 @@ namespace Tsp
             // clearCityListButton
             // 
             this.clearCityListButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.clearCityListButton.Location = new System.Drawing.Point(428, 380);
+            this.clearCityListButton.Location = new System.Drawing.Point(428, 340);
             this.clearCityListButton.Name = "clearCityListButton";
             this.clearCityListButton.Size = new System.Drawing.Size(113, 23);
             this.clearCityListButton.TabIndex = 9;
@@ -348,6 +328,15 @@ namespace Tsp
             this.selectFileButton.UseVisualStyleBackColor = true;
             this.selectFileButton.Click += new System.EventHandler(this.selectFileButton_Click);
             // 
+            // randomSeedTextBox
+            // 
+            this.randomSeedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.randomSeedTextBox.Location = new System.Drawing.Point(428, 284);
+            this.randomSeedTextBox.Name = "randomSeedTextBox";
+            this.randomSeedTextBox.Size = new System.Drawing.Size(1, 21);
+            this.randomSeedTextBox.TabIndex = 5;
+            this.randomSeedTextBox.Text = "0";
+            // 
             // TspForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -366,7 +355,6 @@ namespace Tsp
             this.Controls.Add(this.clearCityListButton);
             this.Controls.Add(this.openCityListButton);
             this.Controls.Add(this.randomSeedTextBox);
-            this.Controls.Add(this.randomSeedLabel);
             this.Controls.Add(this.groupSizeTextBox);
             this.Controls.Add(this.groupSizeLabel);
             this.Controls.Add(this.maxGenerationTextBox);
@@ -383,7 +371,8 @@ namespace Tsp
             this.Controls.Add(this.tourDiagram);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TspForm";
-            this.Text = "Traveling Salesman Problem";
+            this.Text = "Задача коммивояжера";
+            this.Load += new System.EventHandler(this.TspForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tourDiagram)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -406,8 +395,6 @@ namespace Tsp
         private System.Windows.Forms.TextBox maxGenerationTextBox;
         private System.Windows.Forms.Label groupSizeLabel;
         private System.Windows.Forms.TextBox groupSizeTextBox;
-        private System.Windows.Forms.TextBox randomSeedTextBox;
-        private System.Windows.Forms.Label randomSeedLabel;
         private System.Windows.Forms.Button openCityListButton;
         private System.Windows.Forms.Button clearCityListButton;
         private System.Windows.Forms.TextBox mutationTextBox;
@@ -420,6 +407,7 @@ namespace Tsp
         private System.Windows.Forms.Label CloseCityOddsLabel;
         private System.Windows.Forms.Label StatusLabel;
         private System.Windows.Forms.Button selectFileButton;
+        private System.Windows.Forms.TextBox randomSeedTextBox;
     }
 }
 

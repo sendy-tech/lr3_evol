@@ -274,5 +274,10 @@ namespace Tsp
         {
 
         }
+
+        private void TspForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
